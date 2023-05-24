@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Code Compiler</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom styles go here */
+    .editor {
+      height: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Python Code Compiler</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mt-4">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="code">Python Code</label>
+          <textarea class="form-control editor" id="code" rows="8"></textarea>
+        </div>
+        <button class="btn btn-primary" id="compileBtn">Compile</button>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="output">Output</label>
+          <textarea class="form-control editor" id="output" rows="8" readonly></textarea>
+        </div>
+      </div>
+    </div>
+  
+
+  <!-- Custom JS -->
+  <script>
+    // Add your custom JavaScript code here
+    const compileBtn = document.getElementById('compileBtn');
+    const codeInput = document.getElementById('code');
+    const outputTextarea = document.getElementById('output');
+    
+    compileBtn.addEventListener('click', () => {
+      // Write your code compilation logic here
+      // You can access the code input value using codeInput.value
+      // Perform the compilation and update the outputTextarea value with the result
+      // For demonstration purposes, we'll display a placeholder message
+      
+
+      outputTextarea.value = 'Code compilation will be implemented here.';
+    });
+  </script>
+</body>
+
+
+ </main>
+  
+
+ 
+</body>
+
+</html>
